@@ -1,10 +1,9 @@
- import os  
+import os  
 
- def say(something):  
-   os.system('espeak -ven+f2 "{0}"'.format(something))
+name1 = "Hello, Hello Bruna"
+name2 = "Hello, Hello Button"
 
- a, b = 0, 1  
- say(a)  
- while b < 50:  
-     say(b)  
-     a, b = b, a+b  
+def say(name):
+ os.system('espeak -ven+f2 -k5 -s150 "{}"'.format(name))
+ 
+say(name2)
